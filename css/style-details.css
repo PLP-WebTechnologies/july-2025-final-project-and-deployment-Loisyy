@@ -1,0 +1,328 @@
+/* Style Details Page Specific Styles */
+
+/* Hero Section */
+.style-hero {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.hero-image-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* Image Zoom Overlay */
+.image-zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.image-zoom-overlay.active {
+  display: flex;
+}
+
+.zoomed-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.close-zoom {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.close-zoom:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Style Details Section */
+.style-details {
+margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-link {
+  color: #7c9885;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #5a7c65;
+}
+
+.style-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.style-description {
+  margin-bottom: 3rem;
+}
+
+.style-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 800px;
+}
+
+/* Materials and Tools Grid */
+.materials-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.materials-section,
+.tools-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #7c9885;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  color: #7c9885;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.expand-btn:hover {
+  background-color: rgba(124, 152, 133, 0.1);
+}
+
+.expand-btn.expanded {
+  transform: rotate(180deg);
+}
+
+.materials-list,
+.tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.materials-list.collapsed,
+.tools-list.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.materials-list li,
+.tools-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.materials-list li:before,
+.tools-list li:before {
+  content: "•";
+  color: #7c9885;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.materials-list li:last-child,
+.tools-list li:last-child {
+  border-bottom: none;
+}
+
+/* Instructions Section */
+.instructions-section {
+  margin-bottom: 3rem;
+}
+
+.instructions-content {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid #7c9885;
+  transition: all 0.3s ease;
+}
+
+.instructions-content.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 2rem;
+}
+
+.instruction-step {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.instruction-step:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.instruction-step h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.instruction-step p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Action Section */
+.action-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tutorial-btn {
+  background-color: #7c9885;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(124, 152, 133, 0.3);
+}
+
+.tutorial-btn:hover {
+  background-color: #5a7c65;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 152, 133, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .style-hero {
+    padding: 1rem 0;
+  }
+
+  .hero-image-container {
+    margin: 0 1rem;
+  }
+
+  .style-title {
+    font-size: 2rem;
+  }
+
+  .materials-tools-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .materials-section,
+  .tools-section {
+    padding: 1.5rem;
+  }
+
+  .instructions-content {
+    padding: 1.5rem;
+  }
+
+  .close-zoom {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .style-title {
+    font-size: 1.75rem;
+  }
+
+  .style-description p {
+    font-size: 1rem;
+  }
+
+  .materials-section,
+  .tools-section {
+    padding: 1rem;
+  }
+
+  .instructions-content {
+    padding: 1rem;
+  }
+
+  .tutorial-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}

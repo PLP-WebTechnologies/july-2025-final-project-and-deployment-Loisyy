@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabric Recognition Demo</title>
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/fabric-demo.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+  
+ <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!------Logo ----->
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-text">✂️ logo</a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogue.html" class="nav-link active">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search styles and fabrics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <main class="demo-container">
+    <h1>Teachable Machine Fabric Recognition</h1>
+    <button type="button" onclick="init()">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+  </main>
+
+  <!-- TensorFlow.js & Teachable Machine -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <!-- Custom JS -->
+   <script src="/js/script.js"></script>
+<script src="/js/fabric-demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Details - EcoStitch | Sustainable Fashion Inspiration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-----Header Navigation-------------->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!------Logo ----->
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-text">✂️ logo</a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogue.html" class="nav-link active">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!---------Search Bar--------->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search styles and fabrics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <!------------Mobile Hamburger Menu--------->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---------Main Content-------->
+    <main>
+        <!--------Style Hero Section----------->
+        <section class="style-hero">
+            <div class="container">
+                <div class="hero-image-container">
+                    <img src="/assets/images/Style-Details.jpg" alt="The Reclaimed Denim Trench" class="hero-image"
+                        id="heroImage">
+                    <div class="image-zoom-overlay" id="imageZoomOverlay">
+                        <img src="/assets/images/Style-Details.jpg" alt="The Reclaimed Denim Trench"
+                            class="zoomed-image" id="zoomedImage">
+                        <button class="close-zoom" id="closeZoom">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------Style Details Section-------------->
+        <section class="style-details">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="catalogue.html" class="breadcrumb-link">
+                        <i class="fas fa-arrow-left"></i> Back to Catalogue
+                    </a>
+                </div>
+
+                <h1 class="style-title">The Reclaimed Denim Trench</h1>
+
+                <div class="style-description">
+                    <p>This elegant trench coat exemplifies sustainable style, crafted entirely from reclaimed denim
+                        sourced from various jeans and jackets. The design features a unique patchwork pattern,
+                        highlighting the diverse shades and textures of the repurposed fabric. Each piece is
+                        meticulously stitched to create a flowing silhouette, complete with functional pockets and a
+                        storm flap. The coat combines urban sophistication with a strong commitment to environmental
+                        responsibility, proving that high fashion can indeed be eco-conscious. It's a statement piece
+                        designed for the modern individual who values both aesthetics and sustainability.</p>
+                </div>
+
+                <!----------Materials and Tools Section------------->
+                <div class="materials-tools-grid">
+                    <div class="materials-section">
+                        <h2 class="section-title">
+                            Materials Needed
+                            <button class="expand-btn" data-target="materials-list">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h2>
+                        <ul class="materials-list" id="materials-list">
+                            <li>Upcycled denim fabric (various shades)</li>
+                            <li>Recycled cotton lining</li>
+                            <li>Sustainable thread</li>
+                            <li>Bio-degradable buttons</li>
+                            <li>Eco-friendly fabric dye (optional, for custom shades)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tools-section">
+                        <h2 class="section-title">
+                            Tools Required
+                            <button class="expand-btn" data-target="tools-list">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h2>
+                        <ul class="tools-list" id="tools-list">
+                            <li>Sewing machine</li>
+                            <li>Fabric scissors</li>
+                            <li>Measuring tape</li>
+                            <li>Pins</li>
+                            <li>Iron and ironing board</li>
+                            <li>Seam ripper</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-------------Instructions Section------------>
+                <div class="instructions-section">
+                    <h2 class="section-title">
+                        Step-by-Step Instructions
+                        <button class="expand-btn" data-target="instructions-content">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h2>
+                    <div class="instructions-content" id="instructions-content">
+                        <div class="instruction-step">
+                            <h3>Step 1: Prepare Your Materials</h3>
+                            <p>Sort and wash all denim pieces. Cut them into manageable sections, keeping similar shades
+                                together for design planning.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <h3>Step 2: Create Your Pattern</h3>
+                            <p>Design your trench coat pattern on paper first. Plan the patchwork layout to ensure a
+                                balanced distribution of colors and textures.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <h3>Step 3: Cut and Arrange</h3>
+                            <p>Cut your denim pieces according to the pattern. Arrange them on a flat surface to
+                                visualize the final design before sewing.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <h3>Step 4: Sew the Patchwork</h3>
+                            <p>Begin sewing the patchwork sections together, using strong, sustainable thread. Press
+                                seams open for a professional finish.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <h3>Step 5: Assemble the Coat</h3>
+                            <p>Sew the main body pieces together, add the lining, and attach sleeves. Install buttons
+                                and create buttonholes.</p>
+                        </div>
+                        <div class="instruction-step">
+                            <h3>Step 6: Final Details</h3>
+                            <p>Add finishing touches like the storm flap, belt loops, and any decorative elements. Press
+                                the entire garment for a polished look.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------Action Button------------->
+                <div class="action-section">
+                    <button class="tutorial-btn">
+                        <i class="fas fa-play"></i>
+                        View Tutorial
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!----------------------Footer---------------->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#shop" class="footer-link">Shop</a>
+                    <a href="#learn" class="footer-link">Learn</a>
+                    <a href="#connect" class="footer-link">Connect</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-credit">coded by Lois</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/"></script>
+    <script src="/js/style-details.js"></script>
+</body>
+
+</html>

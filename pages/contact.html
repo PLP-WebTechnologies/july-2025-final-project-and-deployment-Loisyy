@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EcoStitch</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!----------------Header Navigation -------------------->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!------Logo ----->
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-text">✂️ logo</a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogue.html" class="nav-link active">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-------------------Search Bar -------------------->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search styles and fabrics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <!-----------------Mobile Hamburger Menu ----------------------->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------Main Content ---------------->
+    <main>
+        <!--------------------Contact Hero Section --------------------->
+        <section class="contact-hero">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h1 class="contact-title">Get in Touch with EcoStitch</h1>
+                    <p class="contact-subtitle">
+                        We'd love to hear from you! Whether you have feedback, an inquiry, or a collaboration idea,
+                        reach out using the form below.
+                    </p>
+
+                    <!---------------Contact Form ------------------>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input"
+                                placeholder="Your Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType" class="form-label">Inquiry Type</label>
+                            <select id="inquiryType" name="inquiryType" class="form-select" required>
+                                <option value="">Select an option</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="support">Support</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="Briefly describe your inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea"
+                                placeholder="Tell us more about your message..." rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attachments" class="form-label">Attachments (Optional)</label>
+                            <input type="file" id="attachments" name="attachments" class="form-file" multiple>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!------------------------Footer------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#shop" class="footer-link">Shop</a>
+                    <a href="#learn" class="footer-link">Learn</a>
+                    <a href="#connect" class="footer-link">Connect</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-credit">Made with Visily</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

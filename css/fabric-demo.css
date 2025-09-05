@@ -1,0 +1,85 @@
+/* ---------- Homepage Bonus Feature Section ---------- */
+.bonus-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* horizontally center all children */
+  text-align: center;
+  background-color: #f5f8fa;  /* subtle background to stand out */
+  padding: 5rem 20px;         /* matches other sections */
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.bonus-feature h2 {
+  font-size: 2.5rem;          /* matches other section titles */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.bonus-feature p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;           /* same width as commitment text */
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Make the link look like a proper button */
+.bonus-feature .btn {
+  display: inline-block;
+  background-color: #7cb342;  /* same as cta-button */
+  color: white;
+  padding: 1rem 2rem;         /* same as other buttons */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.bonus-feature .btn:hover {
+  background-color: #689f38;  /* same hover as cta-button */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Fabric Demo Page Styles (kept intact) ---------- */
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 20px;
+  min-height: 80vh;
+}
+
+
+button {
+  background-color: #7c9885;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5f7a66;
+  transform: translateY(-2px);
+}
+
+#webcam-container {
+  margin: 20px auto;
+}
+
+#label-container div {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #2d3748;
+}

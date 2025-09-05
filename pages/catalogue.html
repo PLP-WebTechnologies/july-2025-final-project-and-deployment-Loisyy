@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - EcoStitch | Sustainable Fashion Collection</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/catalogue-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!------Logo ----->
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-text">✂️ logo</a>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogue.html" class="nav-link active">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search styles and fabrics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Catalogue Hero Section -->
+        <section class="catalogue-hero">
+            <div class="container">
+                <h1 class="catalogue-title">Discover Sustainable Style Inspirations</h1>
+                <p class="catalogue-description">
+                    Browse our curated collection of upcycled fashion, creatively crafted from leftover fabrics. Find
+                    your next project or simply be inspired to reduce textile waste.
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="filter-left">
+                        <div class="filter-group">
+                            <label for="category-filter" class="filter-label">Filter & Sort</label>
+                            <select id="category-filter" class="filter-select">
+                                <option value="all">All Fabrics</option>
+                                <option value="denim">Denim Scraps</option>
+                                <option value="cotton">Cotton Offcuts</option>
+                                <option value="leather">Leather</option>
+                                <option value="ankara">Ankara/Prints</option>
+                                <option value="mixed">Mixed Scraps</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <select id="sort-filter" class="filter-select">
+                                <option value="newest">Newest</option>
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="clear-filters-btn">Clear Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="ankara">
+                        <div class="product-image">
+                            <img src="/assets/images/1 sunset (2).jpg" alt="Sunset Maxi Dress" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Sunset Maxi Dress</h3>
+                            <p class="product-description">A stunning maxi dress in a vivid Ankara print, perfect for
+                                special occasions with a conscience.</p>
+                            <span class="product-category ankara-prints">Ankara/Prints</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="leather">
+                        <div class="product-image">
+                            <img src="/assets/images/2 artisan.jpg" alt="Artisan Leather Wallet" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Artisan Leather Wallet</h3>
+                            <p class="product-description">A meticulously crafted wallet from salvaged leather,
+                                combining practical design with a minimalist aesthetic.</p>
+                            <span class="product-category leather">Leather</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="cotton">
+                        <div class="product-image">
+                            <img src="/assets/images/3 cloud.jpg" alt="Cloud Soft Shirt" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cloud Soft Shirt</h3>
+                            <p class="product-description">An effortlessly stylish shirt made from soft cotton offcuts,
+                                featuring a relaxed fit and earthy tones.</p>
+                            <span class="product-category cotton-offcuts">Cotton Offcuts</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="denim">
+                        <div class="product-image">
+                            <img src="/assets/images/4 upcycle.jpg" alt="Upcycled Denim Skirt" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Upcycled Denim Skirt</h3>
+                            <p class="product-description">A classic denim skirt reinvented from vintage jeans,
+                                featuring a chic A-line cut and recycled embellishments.</p>
+                            <span class="product-category denim-scraps">Denim Scraps</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-category="mixed">
+                        <div class="product-image">
+                            <img src="/assets/images/5 geometry.jpg" alt="Geometric Blend Trousers" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Geometric Blend Trousers</h3>
+                            <p class="product-description">Tailored trousers designed from an artful combination of
+                                leftover fabrics, creating a unique geometric texture.</p>
+                            <span class="product-category mixed-scraps">Mixed Scraps</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-category="ankara">
+                        <div class="product-image">
+                            <img src="/assets/images/6 vibrant.jpg" alt="Vibrant Print Blouse" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Vibrant Print Blouse</h3>
+                            <p class="product-description">A striking blouse showcasing bold Ankara patterns, perfect
+                                for making a statement while embracing sustainable fashion.</p>
+                            <span class="product-category ankara-prints">Ankara/Prints</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-category="leather">
+                        <div class="product-image">
+                            <img src="/assets/images/7 terra.jpg" alt="Terra Tote Bag" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Terra Tote Bag</h3>
+                            <p class="product-description">An elegant tote bag constructed from repurposed leather,
+                                offering both durability and sophisticated style.</p>
+                            <span class="product-category leather">Leather</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-category="cotton">
+                        <div class="product-image">
+                            <img src="/assets/images/8 garden.jpg" alt="Garden Bloom Dress" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Garden Bloom Dress</h3>
+                            <p class="product-description">A comfortable midi dress made from upcycled cotton, adorned
+                                with subtle floral embroidery for a natural look.</p>
+                            <span class="product-category cotton-offcuts">Cotton Offcuts</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card" data-category="denim">
+                        <div class="product-image">
+                            <img src="/assets/images/9 indigo.jpg" alt="Indigo Patchwork Jacket" loading="lazy">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Indigo Patchwork Jacket</h3>
+                            <p class="product-description">A stylish jacket crafted from various shades of recycled
+                                denim, featuring unique textures and durable design.</p>
+                            <span class="product-category denim-scraps">Denim Scraps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#shop" class="footer-link">Shop</a>
+                    <a href="#learn" class="footer-link">Learn</a>
+                    <a href="#connect" class="footer-link">Connect</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-credit">Made with Visily</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/catalogue.js"></script>
+</body>
+
+</html>
