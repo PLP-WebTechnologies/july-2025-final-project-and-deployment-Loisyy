@@ -27,6 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.remove("active");
         }
     });
+
+    // Highlight the current page nav link
+const currentPage = window.location.pathname.split("/").pop(); // e.g., "about.html"
+document.querySelectorAll(".nav-link").forEach((link) => {
+    link.classList.remove("active"); // remove active from all links
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active"); // add active to current page only
+    }
+});
+
 });
 
 // Search functionality (basic implementation)
