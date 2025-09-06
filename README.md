@@ -58,7 +58,7 @@ images/ # Product images
 
 ## 🌍 Live Demo
 
-👉 [View Project Here]  https://vercel.com/loisyys-projects/my-portfolio 
+👉 [View Project Here]  https://vercel.com/loisyys-projects/power-learn-project-au9t 
 
 ## 🛠️ Tech Stack
 
